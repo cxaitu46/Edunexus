@@ -122,7 +122,7 @@ edunexus/
 
 ---
 
-## Key Concepts to Explain to Your Professor
+## Key Concepts
 
 1. **JWT Authentication Flow**: User logs in → server creates a token → client stores in localStorage → sends with every request → server verifies token
 2. **Protected Routes**: Frontend redirects to login if no token; Backend middleware rejects requests without valid token
