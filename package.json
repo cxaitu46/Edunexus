@@ -1,0 +1,33 @@
+{
+  "name": "edunexus",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/build-client.mjs && concurrently -n bundle,server -c yellow,green \"npm run dev:bundle\" \"npm run dev:server\"",
+    "dev:bundle": "node scripts/build-client.mjs --watch",
+    "dev:server": "nodemon",
+    "build": "node scripts/build-client.mjs",
+    "start": "cross-env NODE_ENV=production node server/index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.3",
+    "lucide-react": "^0.546.0",
+    "mongoose": "^9.2.3",
+    "multer": "^2.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hot-toast": "^2.6.0",
+    "react-router-dom": "^7.13.1",
+    "react-to-print": "^3.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.25.0",
+    "nodemon": "^3.1.9"
+  }
+}

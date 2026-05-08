@@ -1,0 +1,9 @@
+{
+  "name": "EduNexus",
+  "description": "An integrated student collaboration and career development platform featuring a smart resume builder, notes sharing, Q&A, and social feed.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}
